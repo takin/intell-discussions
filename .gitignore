@@ -2,3 +2,7 @@ slide-materials
 .vscode
 .DS_Store
 unreleased-exercises
+exercises/*
+!exercises/*.c
+examples/*
+!examples/*.c
