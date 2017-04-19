@@ -1,28 +1,15 @@
 #include<stdio.h>
-#include<string.h>
-// #include<curses.h>
 
-int main(int argc, char ** argv)
+
+int main(void)
 {
-    system("clear");
-    char nama[100];
-    int i = 0;
+    char hello1[] = {'h','e','l','l','o','\0'};
+    char hello2[] = "Hello World";
 
-    printf("Masukkan nama anda: ");
-    char c = getchar();
-    while(c != 10)
-    {
-        nama[i] = c;
-        i++;
-        c = getchar();
-    }
-    nama[i] = '\0';
+    printf("%s\n", hello2);
 
-    for(int j = 0; j <= i;j++ )
-    {
-        if ( nama[j] >= 97 && nama[j] <= 122 ) {
-            nama[j] = nama[j] - 32;
-        }
-    }
-    printf("Hello, %s\n", nama);
+    hello2[5] = '-';
+
+    printf("%s\n", hello2);
+
 }
