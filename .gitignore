@@ -6,3 +6,5 @@ exercises/*
 !exercises/*.c
 examples/*
 !examples/*.c
+final-exercises/*
+!final-exercises/*.c
